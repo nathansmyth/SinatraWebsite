@@ -11,5 +11,9 @@ describe 'DentalWebsite' do
     get '/'
     last_response.status.should == 200
   end
+  it 'should have a home page' do
+    get '/'
+    last_response.status.should == 200
+  end
 end
 
