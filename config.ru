@@ -4,6 +4,7 @@ require 'tilt'
  
 set :run, false
 set :environment, :production
+set :views, '/home/mainstreetdental2/mainstreetdental.tothenthdesign.com'
  
 # logging
 FileUtils.mkdir_p 'log' unless File.exists?('log')
