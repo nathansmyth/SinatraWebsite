@@ -23,38 +23,38 @@ describe 'DentalWebsite' do
 
   # team page featuring dr. vanderhoef
   it 'should have a team page for dr vanderhoef' do
-    get '/our_team/dr-christopher-vanderhoef/'
-    last_response.status.should == 200
+    get '/dr-christopher-vanderhoef/'
+    last_response.should be_ok
   end
 
   # team page featuring dr. hirsch
   it 'should have a team page for dr hirsch' do
-    get '/dental_services/dr-hirsch'
-    last_response.status.should == 200
+    get '/dr-jeffrey-hirsch/'
+    last_response.should be_ok
   end
 
   # office tour features a slideshow
   it 'should have an office tour' do
-    get '/dental_services/'
-    last_response.status.should == 200
+    get '/office-tour/'
+    last_response.should be_ok
   end
 
   # patients and reviews
   it 'should have a new patients section' do
-    get '/new_patients/'
-    last_response.status.should == 200
+    get '/new-patients/'
+    last_response.should be_ok
   end
 
   # contact section
   it 'should have a contact section home page' do
     get '/contact/'
-    last_response.status.should == 200
+    last_response.should be_ok
   end
 
   # appointment request
-  it 'should have a appointment section home page' do
+  it 'should have an appointment section home page' do
     get '/appointment/'
-    last_response.status.should == 200
+    last_response.should be_ok
   end
 
 end
